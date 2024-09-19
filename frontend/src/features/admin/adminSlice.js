@@ -33,7 +33,7 @@ const adminSlice = createSlice({
         state.isError = true;
         state.message = action.payload;
       })
-            .addCase(getComplaints.pending, (state, action) => {
+       .addCase(getComplaints.pending, (state, action) => {
         state.isLoading = true;
         state.isSuccess = false;
         state.isError = false;
